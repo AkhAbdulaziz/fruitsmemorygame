@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/gameEndDialogLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingRight="16dp"
+    android:paddingLeft="16dp"
+    android:background="@android:color/transparent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/dialog_bg"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/timeOutText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/menu_top_bg"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="TIME OUT"
+            android:textColor="@color/thirdColor"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tryAgainText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="16dp"
+            android:text="TRY AGAIN?"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/noButton"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:background="@drawable/menu_item_bg"
+                android:text="No"
+                android:textAllCaps="false"
+                android:textColor="@color/thirdColor"
+                android:textSize="16sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tryAgainText" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/yesButton"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:background="@drawable/menu_item_bg"
+                android:text="Yes"
+                android:textAllCaps="false"
+                android:textColor="@color/thirdColor"
+                android:textSize="16sp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tryAgainText" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
